@@ -18,7 +18,15 @@ Example config for enhanced auth:
   login=alice
   password=secret
 
-This module has a built-in simple CLI.
+To use in a python program:
+
+  import smsru
+  cli = smsru.Client()
+  cli.send("+79112223344", u"привет лунатикам")
+
+To use with CLI:
+
+  python smsru.py send "+79112223344" "привет лунатикам"
 """
 
 import hashlib
