@@ -70,6 +70,8 @@ COST_STATUS = {
 
 __author__ = "Justin Forest"
 __email__ = "hex@umonkey.net"
+__license__ = "GPL"
+__all__ = ["Client"]
 
 
 class NotConfigured(Exception):
@@ -245,6 +247,3 @@ if __name__ == "__main__":
     print "  %s status msgid...           -- check message status" % sys.argv[0]
     print "  %s token                     -- prints a token" % sys.argv[0]
     exit(1)
-
-
-__all__ = ["Client"]
